@@ -1,5 +1,5 @@
 var projects = [];
-
+//Builds the Projects - No append
 function Project(name, collaborator, language, library, mvpDate) {
   this.name = name;
   this.coll = collaborator;

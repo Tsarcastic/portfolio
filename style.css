@@ -4,7 +4,9 @@
 }
 
 header {
-  background-color: #661686
+  margin-top: 3%;
+  padding: 3% 1% 3% 1%;
+  background-color: #661686;
 }
 
 ul {
@@ -16,8 +18,13 @@ li {
 }
 
 #moi {
-  float: left;
+  float: right;
 }
+
 img {
+  display: block;
+}
+
+#splash {
   margin: 0 auto;
 }

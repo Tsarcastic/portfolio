@@ -1,4 +1,23 @@
-body {
+* {
   max-width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #661686
+}
+
+ul {
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+
+#moi {
+  float: left;
+}
+img {
+  margin: 0 auto;
 }

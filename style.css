@@ -1,4 +1,30 @@
 * {
   max-width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 3%;
+  padding: 3% 1% 3% 1%;
+  background-color: #661686;
+}
+
+ul {
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+
+#moi {
+  float: right;
+}
+
+img {
+  display: block;
+}
+
+#splash {
+  margin: 0 auto;
 }

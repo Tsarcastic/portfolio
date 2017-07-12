@@ -22,6 +22,10 @@ img {
   display: block;
 }
 
+.template {
+  display: none;
+}
+
 #splash {
   margin: 0 auto;
 }

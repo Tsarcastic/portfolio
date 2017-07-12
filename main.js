@@ -1,11 +1,10 @@
 var projects = [];
 //Builds the Projects - No append
-function Project(name, collaborator, language, library, mvpDate) {
+function Project(name, language, site, github, firstPublish) {
   this.name = name;
-  this.coll = collaborator;
   this.language = language;
-  this.library = library;
-  this.mvpDate = mvpDate;
+  this.firstPublish = firstPublish;
+  this.site = site;
+  this.github = github;
   projects.push(this);
-
 }

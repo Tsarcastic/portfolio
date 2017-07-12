@@ -1,4 +1,40 @@
 * {
   max-width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
+  font-size: 110%;
+}
+
+header {
+  margin-top: 3%;
+  padding: 3% 3% 3% 3%;
+  background-color: #661686;
+}
+
+ul {
+  display: block;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  display: block;
+}
+
+.template {
+  display: none;
+}
+
+#splash {
+  margin: 0 auto;
+}
+
+#moi {
+  float: right;
+}
+
+#deGuerre {
+  width: 80%
+  display: relative;
 }

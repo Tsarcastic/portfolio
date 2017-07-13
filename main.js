@@ -1,3 +1,5 @@
+'use strict';
+
 var projects = [];
 //Builds the Projects - No append
 function Project(name, language, site, github, firstPublish) {

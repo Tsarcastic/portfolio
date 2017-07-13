@@ -1,7 +1,9 @@
 * {
-  max-width: 80%;
   margin: 0 auto;
   font-size: 110%;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: purple;
 }
 
 header {
@@ -10,8 +12,12 @@ header {
   background-color: #661686;
 }
 
+body {
+  width:80%;
+}
+
 ul {
-  display: block;
+  display: inline;
 }
 
 li {
@@ -19,15 +25,22 @@ li {
 }
 
 img {
-  display: block;
+  display: inline;
 }
 
 .template {
   display: none;
 }
 
+.work {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 10%;
+}
+
 #splash {
   margin: 0 auto;
+  display: block;
 }
 
 #moi {
@@ -35,6 +48,5 @@ img {
 }
 
 #deGuerre {
-  width: 80%
   display: relative;
 }

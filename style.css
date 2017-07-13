@@ -14,7 +14,9 @@ header {
 
 body {
   width:80%;
-}
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  }
 
 ul {
   display: inline;
@@ -48,5 +50,6 @@ img {
 }
 
 #deGuerre {
-  display: relative;
+  display: ;
+  margin: 0 auto;
 }

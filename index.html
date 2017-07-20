@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=Skeleton-2.0.4\css\normalize.css>
+  <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
   <link rel="stylesheet" href="style.css">
   <title>Brendan M.D.</title>
 </head>
@@ -16,36 +18,45 @@
       <li>About Me</li>
     </ul>
   </header>
-  <main> <!--This is the div that will sit between the header & footer  -->
-    <img src="500x500.png" id="splash">
-    <ul id="deGuerre">
-      <li class="work"><img src="240x240.png"></li>
-      <li class="work"><img src="240x240.png"></li>
-      <li class="work"><img src="240x240.png"></li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis
-      consequat lorem at feugiat. Sed non nunc et leo ullamcorper fermentum. Ut turpis
-      ligula, egestas vitae eros sed, iaculis semper mi. Donec facilisis leo diam,
-      eleifend viverra tortor ultricies quis. In feugiat libero purus, non pharetra
-      tortor ornare quis. Proin pellentesque interdum tellus blandit pharetra.
-      Curabitur quis est posuere, placerat sem vitae, vulputate erat. Donec a nisi
-      malesuada metus tristique consequat vitae ut quam.
-    </p>
   <main>
+    <div class="row">
+      <div class="two columns" class="side">
+        Where does this show up?
+      </div>
+      <div class="eight columns" id="primary">
+        <!--This is the div that will sit between the header & footer  -->
+        <img src="500x500.png" id="splash">
+        <div id="appendHere">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis
+          consequat lorem at feugiat. Sed non nunc et leo ullamcorper fermentum. Ut turpis
+          ligula, egestas vitae eros sed, iaculis semper mi. Donec facilisis leo diam,
+          eleifend viverra tortor ultricies quis. In feugiat libero purus, non pharetra
+          tortor ornare quis. Proin pellentesque interdum tellus blandit pharetra.
+          Curabitur quis est posuere, placerat sem vitae, vulputate erat. Donec a nisi
+          malesuada metus tristique consequat vitae ut quam.
+        </p>
+      </div>
+      <div class="two columns" class="side">
+        Where does this show up?
+      </div>
+    </div>
 
-<article class="template" data-category="Project">
-  <h1>Name</h1>
-  <ul>
-    <li class="language"></li>
-    <li class="site"></li>
-    <li class="github"></li>
-    <li class="firstPublish"></li>
-  </ul>
-</article>
+    <main>
+
+      <article class="template" data-category="Project">
+        <h1>Name</h1>
+        <ul>
+          <li class="language"></li>
+          <li class="site"><a href=""></a></li>
+          <li class="github"><a href=""></a></li>
+        </ul>
+      </article>
 
 
-  <footer>
-  </footer>
-  <script src="main.js"></script>
-</body>
-</html>
+      <footer>
+      </footer>
+      <script src="main.js"></script>
+      <script src="projects.js"></script>
+    </body>
+    </html>

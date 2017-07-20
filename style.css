@@ -7,13 +7,10 @@
 }
 
 header {
-  margin-top: 3%;
+  margin-top: 1%;
   padding: 3% 3% 3% 3%;
   background-color: #661686;
 }
-
-body {
-  }
 
 ul {
   display: inline;
@@ -22,8 +19,9 @@ ul {
 
 li {
   display: inline;
-  padding:
   background-color: #661686;
+  font-size: 2em;
+  margin: .5em;
 }
 
 img {
@@ -44,6 +42,11 @@ img {
   background-color: white;
 }
 
+#name {
+  font-size: 2em;
+  background-color: #661686;
+}
+
 #splash {
   margin: 0 auto;
   display: block;
@@ -58,6 +61,6 @@ img {
 }
 
 #deGuerre {
-  display: ;
   margin: 0 auto;
 }
+

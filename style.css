@@ -1,9 +1,9 @@
 * {
   margin: 0 auto;
   font-size: 110%;
-  border-width: 5px;
-  border-style: dotted;
-  border-color: purple;
+
+  background-color: black;
+  color:white;
 }
 
 header {
@@ -13,17 +13,17 @@ header {
 }
 
 body {
-  width:80%;
-  color: white;
-  font-family: 'Cabin', sans-serif;
   }
 
 ul {
   display: inline;
+  background-color: #661686;
 }
 
 li {
   display: inline;
+  padding:
+  background-color: #661686;
 }
 
 img {
@@ -40,9 +40,17 @@ img {
   padding-top: 10%;
 }
 
+.side {
+  background-color: white;
+}
+
 #splash {
   margin: 0 auto;
   display: block;
+}
+
+#primary {
+  margin: 0 auto;
 }
 
 #moi {

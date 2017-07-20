@@ -13,7 +13,7 @@ header {
 }
 
 body {
-}
+  }
 
 ul {
   display: inline;
@@ -58,5 +58,6 @@ img {
 }
 
 #deGuerre {
-  display: relative;
+  display: ;
+  margin: 0 auto;
 }

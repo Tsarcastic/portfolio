@@ -42,6 +42,14 @@ img {
   background-color: white;
 }
 
+.line {
+  background-color: black;
+}
+
+#hide {
+  display:none;
+}
+
 #name {
   font-size: 2em;
   background-color: #661686;
@@ -56,7 +64,7 @@ img {
   margin: 0 auto;
 }
 
-#moi {
+#mainNav {
   float: right;
 }
 

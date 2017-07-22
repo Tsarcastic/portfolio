@@ -33,4 +33,6 @@ projects.forEach(function(Project) {
   
  });
 
+
  $('.projects').hide();
+

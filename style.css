@@ -46,8 +46,9 @@ img {
   background-color: black;
 }
 
-#hide {
-  display:none;
+.projects {
+  margin: 1%;
+  padding: 1%;
 }
 
 #name {

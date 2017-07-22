@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href=Skeleton-2.0.4\css\normalize.css>
+  <link rel="stylesheet" href="Skeleton-2.0.4\css\normalize.css">
   <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
   <link rel="stylesheet" href="style.css">
-  <title>Brendan M.D.</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"> </script><title>Brendan M.D.</title>
 </head>
 <body>
   <header>
     <ul id="name">Brendan Davis</ul>
-    <ul id="moi">
-      <li href>Projects</li>
+    <ul id="mainNav">
+      <li id="proTab">Projects</li>
       <li href="https://github.com/Tsarcastic">Github</li>
       <li href="https://www.linkedin.com/in/brendanmdavis/">LinkedIn</li>
-      <li>About Me</li>
+      <li id="abTab">About Me</li>
     </ul>
   </header>
   <main>
@@ -25,10 +25,11 @@
       </div>
       <div class="eight columns" class="container" id="primary">
         <!--This is the div that will sit between the header & footer  -->
-        <img src="500x500.png" id="splash">
-        <div id="appendHere">
+        <img src="500x500.png" id="splash" class="aboutMe" data-category="aboutMe">
+        <div id="projects">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis
+        
+        <p class="aboutMe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis
           consequat lorem at feugiat. Sed non nunc et leo ullamcorper fermentum. Ut turpis
           ligula, egestas vitae eros sed, iaculis semper mi. Donec facilisis leo diam,
           eleifend viverra tortor ultricies quis. In feugiat libero purus, non pharetra
@@ -44,11 +45,12 @@
 
     <main>
 
-      <article class="template" data-category="Project">
+      <article class="projects" id="template" class="template" >
         <h1>Name</h1>
-        <ul>
-          <li class="language"></li>
-          <li class="site">Link<a href=""></a></li>
+        <ul class="line">
+          <li class="language" class="line"></li>
+          </br>
+          <li class="site" class="line"><a href="">Link</a></li>
         </ul>
         <p class="description"></p>
       </article>
@@ -56,7 +58,9 @@
 
       <footer>
       </footer>
-      <script src="main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
       <script src="projects.js"></script>
+      <script src="main.js"></script>
+      
     </body>
     </html>

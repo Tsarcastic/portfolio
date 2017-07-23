@@ -27,14 +27,17 @@ new Project('Fake', 'HTML/CSS/Javascript', 'www.placeholder.com', 'Helped put a 
 // };
 
 Project.prototype.toHtml = function() {
+  
   var myProjects = $('#theTemplate-template').html();
+  console.log(myProjects);
   var compiled = Handlebars.compile(myProjects);
-  $('projects').append(compiled(this))
+  console.log(compiled(this));
+  $('#projects').append(compiled(this))
 };
 
 
 projects.forEach(function(Project) {  
-  $('#projects').append(Project.toHtml());
+  $('#projects').append(Project.toHtml(this));
 });
 
 

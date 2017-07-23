@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="Skeleton-2.0.4\css\normalize.css">
   <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"> </script><title>Brendan M.D.</title>
+  
+  <title>Brendan M.D.</title>
 </head>
 <body>
   <header>
@@ -43,9 +44,9 @@
       </div>
     </div>
 
-    <main>
+    </main>
 
-      <article class="projects" id="template" class="template" >
+      <!--<article class="projects" id="template" class="template" >
         <h1>Name</h1>
         <ul class="line">
           <li class="language" class="line"></li>
@@ -53,11 +54,23 @@
           <li class="site" class="line"><a href="">Link</a></li>
         </ul>
         <p class="description"></p>
-      </article>
+      </article>-->
 
+      <script id="theTemplate-template" type="text.x-handlebars-template">
+      <div class="projects">
+      <h1>{{ name }}</h1>
+        <ul class="line" >
+          <li class="language" class="line">{{ language }}</li>
+          </br>
+          <li class="site" class="line"><a href={{ site }}"">Link</a></li>
+        </ul>
+        <p class="description">{{description}}</p>
+        </div>
+      </script>
 
       <footer>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
       <script src="projects.js"></script>
       <script src="main.js"></script>

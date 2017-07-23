@@ -14,25 +14,31 @@ new Project('This', 'HTML/CSS/Javascript', 'www.placeholder.com', 'This project 
 new Project('Fake', 'HTML/CSS/Javascript', 'www.placeholder.com', 'Helped put a man on the moon');
 
 //Creates the template
-Project.prototype.toHtml = function() {
-  console.log(this)
-  var $newProject = $('#template').clone();
-  $newProject.removeClass('template');
-  $newProject.find('h1').html(this.name);
-  $newProject.find('.language').html(this.language);
-  $newProject.find('.site a').attr('href', this.site);
-  $newProject.find('.description').html(this.description);
-  console.log($newProject)
-  return $newProject;
-};
+// Project.prototype.toHtml = function() {
+//   console.log(this)
+//   var $newProject = $('#template').clone();
+//   $newProject.removeClass('template');
+//   $newProject.find('h1').html(this.name);
+//   $newProject.find('.language').html(this.language);
+//   $newProject.find('.site a').attr('href', this.site);
+//   $newProject.find('.description').html(this.description);
+//   console.log($newProject)
+//   return $newProject;
+// };
 
+Project.prototype.toHtml = function() {
+  var myProjects = $('#theTemplate-template').html();
+  var compiled = Handlebars.compile(myProjects);
+  $('projects').append(compiled(this))
+};
 
 
 projects.forEach(function(Project) {  
   $('#projects').append(Project.toHtml());
-  
- });
+});
 
 
  $('.projects').hide();
+
+ 
 

@@ -12,3 +12,7 @@
 // function display(class) {
   
 // }
+
+main.initIndexPage = function() {
+    Project
+}

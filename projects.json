@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Codographic Memory",
+        "language": "HTML/CSS/Javascript",
+        "site": "www.placeholder.com",
+        "description": "A quick and challenging memory game"
+    },
+    {
+        "name": "This",
+        "language": "HTML/CSS/Javascript",
+        "site": "www.placeholder.com",
+        "description": "The thing you're looking at right now"
+    },
+    {
+        "name": "Fake",
+        "language": "HTML/CSS/Javascript",
+        "site": "www.placeholder.com",
+        "description": "Helped put a man on the moon"
+    }
+]

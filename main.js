@@ -10,9 +10,8 @@
      $('.projects').hide();
  });
 // function display(class) {
-  
+
 // }
 
-main.initIndexPage = function() {
-    Project
-}
+// main.initIndexPage = function() {
+// }

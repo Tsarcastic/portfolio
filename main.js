@@ -1,4 +1,5 @@
 'use strict';
+var main = {}
 
  $('#proTab').click(function() {
      $('.projects').show()
@@ -13,5 +14,5 @@
 
 // }
 
-// main.initIndexPage = function() {
-// }
+main.initIndexPage = function() {
+}

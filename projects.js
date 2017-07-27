@@ -9,12 +9,6 @@ function Project(name, language, site, description) {
   projects.push(this);
 }
 
-// Project.prototype.toHtml(function() {
-//   var myProjects = $('#theTemplate-template').html();
-//   var compiled = Handlebars.compile(myProjects);
-//   $('#projects').append(compiled(this))
-// });
-
 
 projects.forEach(function(Project) {
   $('#projects').append(Project.toHtml());
@@ -29,7 +23,7 @@ projects.loadAll = function(rawData) {
     // $('#projects').append(Project.toHtml());
     var myProjects = $('#theTemplate-template').html();
     var compiled = Handlebars.compile(myProjects);
-    $('#projects').append(compiled(this))
+    $('#projects').append(compiled(Project))
   });
 }
 
@@ -47,6 +41,14 @@ projects.fetchAll = function() {
     })
   }
 }
+
+projects.forEach(function(Project) {
+  $('#projects').append(Project.toHtml());
+});
+
+
+$('.projects').hide();
+projects.fetchAll();
 
 // new Project('Codographic Memory', 'HTML/CSS/Javascript', 'www.placeholder.com', 'A quick and challenging memory game');
 // new Project('This', 'HTML/CSS/Javascript', 'www.placeholder.com', 'This project is currently in process' );
@@ -72,11 +74,10 @@ projects.fetchAll = function() {
 //   $('#projects').append(compiled(this))
 // };
 
+// Project.prototype.toHtml(function() {
+//   var myProjects = $('#theTemplate-template').html();
+//   var compiled = Handlebars.compile(myProjects);
+//   $('#projects').append(compiled(this))
+// });
 
-projects.forEach(function(Project) {
-  $('#projects').append(Project.toHtml());
-});
 
-
-$('.projects').hide();
-projects.fetchAll();

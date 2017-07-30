@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/Skeleton-2.0.4\css\normalize.css">
+  <link rel="stylesheet" href="styles/Skeleton-2.0.4\css\skeleton.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Brendan M.D.</title>
+</head>
+<body>
+  <header>
+    <ul id="name">Brendan Davis</ul>
+    <ul id="mainNav">
+      <li id="proTab">Projects</li>
+      <li href="https://github.com/Tsarcastic">Github</li>
+      <li href="https://www.linkedin.com/in/brendanmdavis/">LinkedIn</li>
+      <li id="abTab">About Me</li>
+    </ul>
+  </header>
+  <main>
+    <div class="row">
+      <div class="two columns" class="container"class="side">
+       Why does the column collapse if I remove this?
+      </div>
+      <div class="eight columns" class="container" id="primary">
+        <!--This is the div that will sit between the header & footer  -->
+        <img src="500x500.png" id="splash" class="aboutMe" data-category="aboutMe">
+        <div id="projects">
+        </div>
+
+        <p class="aboutMe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis
+          consequat lorem at feugiat. Sed non nunc et leo ullamcorper fermentum. Ut turpis
+          ligula, egestas vitae eros sed, iaculis semper mi. Donec facilisis leo diam,
+          eleifend viverra tortor ultricies quis. In feugiat libero purus, non pharetra
+          tortor ornare quis. Proin pellentesque interdum tellus blandit pharetra.
+          Curabitur quis est posuere, placerat sem vitae, vulputate erat. Donec a nisi
+          malesuada metus tristique consequat vitae ut quam.
+        </p>
+      </div>
+      <div class="two columns" class="container" class="side">
+        Why does the column collapse if I remove this?
+      </div>
+    </div>
+
+    </main>
+
+      <!--<article class="projects" id="template" class="template" >
+        <h1>Name</h1>
+        <ul class="line">
+          <li class="language" class="line"></li>
+          </br>
+          <li class="site" class="line"><a href="">Link</a></li>
+        </ul>
+        <p class="description"></p>
+      </article>-->
+
+      <script id="theTemplate-template" type="text.x-handlebars-template">
+      <div class="projects">
+      <h1>{{ name }}</h1>
+        <ul class="line" >
+          <li class="language" class="line">{{ language }}</li>
+          </br>
+          <li class="site" class="line"><a href={{ site }}"">Link</a></li>
+        </ul>
+        <p class="description">{{description}}</p>
+        </div>
+      </script>
+
+      <footer>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <!-- <script src="projects.js"></script> -->
+      <script src="scripts/main.js"></script>
+
+    </body>
+    </html>

@@ -1,65 +1,67 @@
-Day 2
-
-  User Stories
-    As a developer, I want my site to use valid and semantic markup, so that employers will love me.
-    As the creator, I want the page to link to my social and GitHub pages, so that visitors can follow me, and I can build my audience.
-    As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it, and abstract out the details for individual projects.
-    As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings swiftly.
-
-  Technical Requirements
-    Think of some ideas for your source data, and code it up in its own file! Build out an array of three objects to start with, all having similar properties.
-    Create a new .js file with the appropriate methods to help modify your source data to help render it to the DOM:
-    Use good Object Oriented code: Create a constructor function for projects or source data.
-    Leave as little in the window (global) namespace as possible: attach functions to objects, etc.
-    Use jQuery to clone the example markup for each project, as you add additional content.
-    Your "Project" prototype should have a .toHtml() function that adds new data to the DOM.
-    Refactor your CSS into a base, layout, and module structure where applicable.
-
-Day 3
-  User Stories
-    As the creator, I want the Home and About nav links to act as tabs, so my story is revealed FAST.
-    This means your links to NOT navigate to a new page.
-    Instead, your "single page app" shows only the section related to the navigation tab that is selected.
-    You can use 'data-' attributes to associate a content section with a particular tab
-    Then use jQuery so when the tab is clicked, you hide all the sections, then reveal the associated section only.
-    As a reader, I want the portfolio to use a nice color scheme, so that it stands out visually.
-
-  Technical Requirements
-    Use event delegation whenever appropriate.
-    Add click handlers to at leat one nav section.
-    Do as much work as you can with advanced selectors, rather than littering your markup with classes and ids.
-    When classes and IDs are needed, pick semantic names. There is to be no $('#content .content') nonsense!
-
-Day 4
-  User Stories
-    As a developer, I want to use Handlebars for my project template, so that I can include new projects more easily.
-    As a developer, I want my CSS styles to follow SMACSS organization, so that I know where to look for creating and editing styles.
-  Technical Requirements
-    Add Handlebars to your blogging system.
-    Organize your CSS code according to SMACSS, with at least a file for base, layout, and modules
-
-Day 5
-  Gavin and I worked on each others'
-
-Day 6
-  User Stories
-    As a developer, I want to store my project data in a .json file, so that I can keep it organized.
-    As a developer, I want to retrieve that source data file asynchronously, so that my app logic gets the data just when I need it.
-  Technical Requirements
-    Transfer your collection of data over to a .json file, replacing your original file.
-    JSON-Lint to the rescue!
-    Continue to follow good SMACSS principles.
-    Be sure to use the correct jQuery method for each AJAX call.
-    Be thoughtful when functions are executed asynchronously. This is a major source of bugs!
 
 Day 7
-    Set it to run from a server.js file like we did in lab.
+  Set it to run from a server.js file like we did in lab.
 
 Day 8
-    Catch up!
+  None
 
 Day 9
-    Peer code review assignments
+  Peer code review assignments (done)
 
 Day 10/The Weekend
-    Adding in the rest of the technical requirements
+    Apply some functional programming concepts to your portfolio codebase.
+    Eliminate all for loops.
+    Use map where you are transforming one collection into another.
+    In at least one place, enclose the contents of a script file in an IIFE, that exports your high-level objects.
+    Refactor any parts of your app that could be more loosely coupled. Make smaller functions that can accept and expect the return values of other functions!
+    Think of a useful way to use reduce. Maybe you want to put some "fun facts stats" in your footer?
+
+  Technical Requirements
+    Use of at least one .map() method.
+    Use of at least one .reduce() method.
+    IIFE present on at least one .js file.
+
+Day 11
+  We converted the blog into a SPA by using the page.js library to capture clicks and execute a function to modify the page, rather than reloading content from a server.
+
+  Give your portfolio the same treatment. Update your main nav so that each clickable item is a link to a different url, that is handled by a function as indicated by page.js.
+
+  Keep your code organized in a M-V-C structure that isolates data management from presentation layer, from the controller that holds it all together.
+
+Day 12
+    In our blog, we used RESTful routes to interact with the Github API. It's time to take this a step further and integrate this functionality into your portfolio project.
+
+    To get started, you will need to create a controller that includes a call to the Github API. This call should grab data about your individual account, and render portions of the returned content to the page, once the data has been loaded. This is fairly open ended, so use whatever data you deem fit and be sure to separate your concerns.
+  
+  Technical Requirements
+    Ensure your code passes ESLint.
+    Place all code within the proper layer of MVC abstraction and encapsulation.
+    Use a proxied, authenticated ajax call to GitHub's API to get data from the API.
+    Keep your portfolio responsive as it displays API data.
+    DO NOT publish your GitHub Token to any public repo.
+
+Day 13
+  Technical Requirements
+    Ensure your code passes ESLint
+    DO NOT create your Heroku app with a default name. If you do accidentally, rename it. Or blow it away, and start again.
+    Link to your live site in your portfolio README on GitHub.
+
+  User Stories
+    As a developer, I want my portfolio to run in a development environment that closely matches production, so that I can reduce bugs related to infrastructure surprises.
+    
+    You'll need to create a new Heroku app, and link it to your portfolio
+    
+    As a site owner, I want my site running on a robust hosting platform, so that I don't have to hire a sysadmin.
+    
+    You'll need to get your app deployed and running on Heroku.
+    Heroku will need to know what kind of app you are running, and how to run it.
+    You can create a new package.json file, or copy over package.json and server.js from the blog project.
+    
+    As a developer, I want my secret tokens accessed only through environment variables, so that I can keep them secure.
+    You'll need to configure an environment variable on your production server, so the server.js file can access your token when it's running.
+
+Day 14
+  Ensure your code passes ESLint.
+  Use middleware to manage state
+  Use middleware to access resources based on parameters defined in your routes.
+  Use functional programming to refactor any relevant View-specific methods.

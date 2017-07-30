@@ -50,6 +50,7 @@ projects.forEach(function(Project) {
 $('.projects').hide();
 projects.fetchAll();
 
+// ------------------------------------------------------------------------------
 // new Project('Codographic Memory', 'HTML/CSS/Javascript', 'www.placeholder.com', 'A quick and challenging memory game');
 // new Project('This', 'HTML/CSS/Javascript', 'www.placeholder.com', 'This project is currently in process' );
 // new Project('Fake', 'HTML/CSS/Javascript', 'www.placeholder.com', 'Helped put a man on the moon');
